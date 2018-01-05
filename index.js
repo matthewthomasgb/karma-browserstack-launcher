@@ -193,7 +193,8 @@ var BrowserStackBrowser = function (
         process.env.TRAVIS_BUILD_NUMBER ||
         process.env.CIRCLE_BUILD_NUM ||
         process.env.DRONE_BUILD_NUMBER || null,
-      video: bsConfig.video !== undefined ? bsConfig.video : true
+      video: bsConfig.video !== undefined ? bsConfig.video : true,
+      'browserstack.timezone': bsConfig.timezone || null
     }
 
     if (typeof args.real_mobile !== 'undefined') {
