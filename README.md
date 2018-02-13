@@ -73,6 +73,7 @@ module.exports = function(config) {
 - `proxyProtocol` the protocol of your proxy (optional. default: `http`. valid: `http` or `https`)
 - `forcelocal` force traffic through the local BrowserStack tunnel, passes flag through to BrowserStackTunnel
 - `video` enable video recording of session on BrowserStack (defaults to `true`)
+- `timezone` configure tests to run on a custom time zone (optional)
 
 ### Per browser options
 
